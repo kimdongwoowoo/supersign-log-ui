@@ -25,6 +25,9 @@ import Maps from "views/Map.js";
 import UserPage from "views/User.js";
 import UpgradeToPro from "views/Upgrade.js";
 
+import VocList from "views/VocList";
+import VocRequest from "views/VocRequest";
+
 var routes = [
   {
     path: "/dashboard",
@@ -33,6 +36,7 @@ var routes = [
     component: Dashboard,
     layout: "/admin",
   },
+
   {
     path: "/icons",
     name: "Icons",
@@ -40,6 +44,7 @@ var routes = [
     component: Icons,
     layout: "/admin",
   },
+
   {
     path: "/maps",
     name: "Maps",
@@ -81,6 +86,28 @@ var routes = [
     name: "Upgrade to PRO",
     icon: "nc-icon nc-spaceship",
     component: UpgradeToPro,
+    layout: "/admin",
+  },
+
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    icon: "nc-icon nc-layout-11",
+    component: Dashboard,
+    layout: "/admin",
+  },
+  {
+    path: "/req",
+    name: "VOC Req",
+    icon: "nc-icon nc-chat-33",
+    component: VocRequest,
+    layout: "/admin",
+  },
+  {
+    path: "/voc",
+    name: "VOC List",
+    icon: "nc-icon nc-align-left-2",
+    component: VocList,
     layout: "/admin",
   },
 ];
